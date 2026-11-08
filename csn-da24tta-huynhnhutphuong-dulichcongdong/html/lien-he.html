@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Du lịch cộng đồng Trà Vinh</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+
+    <header>
+        <h2>DU LỊCH CỘNG ĐỒNG TRÀ VINH</h2>
+        <p>Kết nối cộng đồng - Khám phá văn hóa địa phương</p>
+    </header>
+
+    <nav>
+	<a href="../index.html" class="btn-home">Trở về trang đầu</a>
+        <a href="trang-chu.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="dich-vu.html">Dịch vụ</a>
+        <a href="diem-den.html" class="active">Điểm đến</a>
+        <a href="lien-he.html">Liên hệ</a>
+    </nav>
+
+    <section class="banner">
+        <h1>Liên hệ với chúng tôi</h1>
+        <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn!</p>
+    </section>
+
+    <main class="container">
+
+        <div class="thongtin">
+            <h2>Thông tin liên hệ</h2>
+
+            <div class="item">
+                <span>📍</span>
+                <div>
+                    <h3>Địa chỉ</h3>
+                    <p>Phường Long Đức,Tỉnh Vinh Long Việt Nam</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <span>📞</span>
+                <div>
+                    <h3>Điện thoại</h3>
+                    <p>0385394724</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <span>✉️</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>huynhphuong04092006@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <span>🌿</span>
+                <div>
+                    <h3>Giờ hỗ trợ</h3>
+                    <p>Thứ Hai - Thứ Bảy</p>
+                    <p>7:30 - 17:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-lienhe">
+            <h2>Gửi tin nhắn</h2>
+            <p>Hãy để lại thông tin, chúng tôi sẽ tiếp nhận yêu cầu của bạn.</p>
+
+            <form id="contactForm">
+                <label for="hoten">Họ và tên</label>
+                <input type="text" id="hoten"
+                       placeholder="Nhập họ và tên" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                       placeholder="Nhập địa chỉ email" required>
+
+                <label for="chude">Chủ đề</label>
+                <input type="text" id="chude"
+                       placeholder="Nhập chủ đề liên hệ" required>
+
+                <label for="tinnhan">Nội dung</label>
+                <textarea id="tinnhan" rows="5"
+                          placeholder="Nhập nội dung tin nhắn..."
+                          required></textarea>
+
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>DU LỊCH CỘNG ĐỒNG TRÀ VINH</h3>
+        <p>Kết nối cộng đồng - Quảng bá du lịch địa phương</p>
+        <p>© 2026 Du lịch cộng đồng Trà Vinh</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Cảm ơn bạn đã liên hệ! Đây là website demo nên tin nhắn chưa được gửi đến máy chủ.");
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
+```

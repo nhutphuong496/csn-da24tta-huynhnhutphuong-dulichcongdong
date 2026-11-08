@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điểm đến du lịch cộng đồng Trà Vinh</title>
+    <link rel="stylesheet" href="../css/style4.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">🌿 Du Lịch Cộng Đồng</div>
+
+    <nav>
+	<a href="../index.html" class="btn-home">Trở về trang đầu</a>
+        <a href="trang-chu.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="dich-vu.html">Dịch vụ</a>
+        <a href="diem-den.html" class="active">Điểm đến</a>
+        <a href="lien-he.html">Liên hệ</a>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">KHÁM PHÁ VẺ ĐẸP QUÊ HƯƠNG</span>
+
+        <h1>
+            Những điểm đến<br>
+            đáng để trải nghiệm
+        </h1>
+
+        <p>
+            Khám phá những địa điểm du lịch, văn hóa và thiên nhiên
+            tuyệt đẹp qua từng hành trình.
+        </p>
+
+        <a href="#danhsach" class="hero-btn">
+            Khám phá ngay ↓
+        </a>
+    </div>
+</section>
+
+<!-- NỘI DUNG -->
+<main class="container">
+
+    <div class="section-heading" id="danhsach">
+        <div>
+            <span class="sub-title">HÀNH TRÌNH KHÁM PHÁ</span>
+            <h2>Địa điểm du lịch</h2>
+            <p>Những địa điểm du lịch nổi bật tại Trà Vinh.</p>
+        </div>
+
+        <button class="add-btn" onclick="moForm()">
+            + Thêm địa điểm
+        </button>
+    </div>
+
+    <!-- TÌM KIẾM -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="timKiem"
+            placeholder="🔍 Tìm kiếm địa điểm du lịch..."
+            oninput="hienThiDiaDiem()"
+        >
+    </div>
+
+    <!-- DANH SÁCH ĐỊA ĐIỂM -->
+    <div class="place-grid" id="danhSachDiaDiem">
+    </div>
+
+    <!-- FORM THÊM ĐỊA ĐIỂM -->
+    <div class="modal" id="formModal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" onclick="dongForm()">×</button>
+
+            <h2>Thêm địa điểm mới</h2>
+
+            <p class="form-note">
+                Chọn địa điểm và nhập thông tin giới thiệu.
+            </p>
+
+            <form id="diaDiemForm">
+
+                <label>Tên địa điểm</label>
+                <input
+                    type="text"
+                    id="ten"
+                    required
+                    placeholder="Nhập tên địa điểm"
+                >
+
+                <label>Địa chỉ</label>
+                <select id="diaChi" required>
+                    <option value="">-- Chọn địa điểm --</option>
+                    <option value="Trà Vinh, Vĩnh Long">Trà Vinh</option>
+                    <option value="Ao Bà Om, Trà Vinh">Ao Bà Om</option>
+                    <option value="Chùa Âng, Trà Vinh">Chùa Âng</option>
+                    <option value="Biển Ba Động, Trà Vinh">Biển Ba Động</option>
+                    <option value="Cù lao Tân Quy, Trà Vinh">Cù lao Tân Quy</option>
+                    <option value="Chùa Vàm Ray, Trà Vinh">Chùa Vàm Ray</option>
+                </select>
+
+                <label>Mô tả địa điểm</label>
+                <textarea
+                    id="moTa"
+                    required
+                    placeholder="Giới thiệu về địa điểm..."
+                ></textarea>
+
+                <label>Đường dẫn hình ảnh</label>
+                <input
+                    type="url"
+                    id="hinhAnh"
+                    placeholder="https://..."
+                >
+
+                <button type="submit" class="save-btn">
+                    Lưu địa điểm
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <h3>🌿 DU LỊCH CỘNG ĐỒNG</h3>
+
+    <p>
+        Khám phá vẻ đẹp quê hương – Kết nối những hành trình.
+    </p>
+
+    <p>© 2026 Du lịch cộng đồng. All rights reserved.</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="../js/js1.js"></script>
+
+<script>
+    function moForm() {
+        document.getElementById("formModal").style.display = "flex";
+    }
+
+    function dongForm() {
+        document.getElementById("formModal").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+```

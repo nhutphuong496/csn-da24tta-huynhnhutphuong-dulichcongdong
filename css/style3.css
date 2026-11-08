@@ -1,0 +1,171 @@
+/* ===== GIAO DIỆN GIỚI THIỆU SỐNG ĐỘNG ===== */
+
+/* 1. Thanh menu & Header */
+header {
+    background: linear-gradient(90deg, #087f5b, #0096a6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #145c43;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.logo {
+    color: #fff4b8;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffd166;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 2. Banner giới thiệu */
+.gioithieu-banner {
+    min-height: 320px;
+    background:
+        linear-gradient(120deg,
+            rgba(0, 105, 75, 0.72),
+            rgba(0, 150, 180, 0.38)),
+        url("images/banner.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.gioithieu-banner h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.gioithieu-banner p {
+    font-size: 19px;
+    color: #fff5c2;
+}
+
+/* 3. Khu vực nội dung */
+.gioithieu-noidung {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #f0fff4, #e8f8ff);
+}
+
+.gioithieu-anh {
+    flex: 1;
+    position: relative;
+}
+
+.gioithieu-anh img {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(21, 94, 69, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gioithieu-anh img:hover {
+    transform: scale(1.025);
+    box-shadow: 0 16px 35px rgba(21, 94, 69, 0.3);
+}
+
+/* Tiêu đề & văn bản */
+.gioithieu-text {
+    flex: 1.2;
+}
+
+.gioithieu-text h2 {
+    color: #087f5b;
+    font-size: 31px;
+    margin-bottom: 22px;
+    border-left: 6px solid #ffb703;
+    padding-left: 15px;
+}
+
+.gioithieu-text p {
+    color: #354b43;
+    font-size: 16px;
+    line-height: 1.95;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+/* 4. Chân trang */
+footer {
+    background: linear-gradient(120deg, #064e3b, #087f8c);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    color: #ffe082;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 7px 0;
+    color: #e2fff4;
+}
+
+/* 5. Responsive - Hiển thị trên điện thoại */
+@media (max-width: 768px) {
+    .gioithieu-banner {
+        min-height: 250px;
+    }
+
+    .gioithieu-banner h1 {
+        font-size: 34px;
+    }
+
+    .gioithieu-banner p {
+        font-size: 16px;
+    }
+
+    .gioithieu-noidung {
+        flex-direction: column;
+        padding: 35px 6%;
+        gap: 28px;
+    }
+
+    .gioithieu-anh,
+    .gioithieu-text {
+        width: 100%;
+    }
+
+    .gioithieu-anh img {
+        height: 280px;
+    }
+
+    .gioithieu-text h2 {
+        font-size: 26px;
+    }
+}

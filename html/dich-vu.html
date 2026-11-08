@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dịch vụ du lịch cộng đồng Trà Vinh</title>
+
+    <link rel="stylesheet" href="../css/style5.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav">
+        <h2 class="logo">DU LỊCH CỘNG ĐỒNG</h2>
+
+          <nav>
+		<a href="../index.html" class="btn-home">Trở về trang đầu</a>
+            <a href="trang-chu.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="dich-vu.html">Dịch vụ</a>
+            <a href="diem-den.html">Điểm đến</a>
+            <a href="lien-he.html">Liên hệ</a>
+        </nav>
+ 
+    </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>DỊCH VỤ DU LỊCH CỘNG ĐỒNG TRÀ VINH</h1>
+
+        <p>
+            Kết nối hộ dân địa phương với du khách
+            qua những trải nghiệm du lịch đặc sắc.
+        </p>
+
+        <a href="#dichvu" class="btn">Khám phá dịch vụ</a>
+    </div>
+</section>
+
+<!-- GIỚI THIỆU -->
+<section class="intro container" id="gioithieu">
+
+    <h2>GIỚI THIỆU DỊCH VỤ</h2>
+
+    <p>
+        Website hỗ trợ các hộ dân tại Trà Vinh giới thiệu,
+        quảng bá và quản lý các dịch vụ du lịch cộng đồng.
+        Du khách có thể dễ dàng tìm kiếm thông tin về ăn uống,
+        phương tiện di chuyển và nơi nghỉ ngơi.
+        Qua đó góp phần quảng bá văn hóa, ẩm thực
+        và hình ảnh du lịch địa phương.
+    </p>
+
+</section>
+
+<!-- DANH MỤC -->
+<section class="category container" id="dichvu">
+
+    <h2>DANH MỤC DỊCH VỤ</h2>
+
+    <div class="category-list">
+
+        <a href="#anuong" class="category-item">
+            <span>🍜</span>
+            <h3>Ăn uống</h3>
+            <p>Ẩm thực và đặc sản địa phương</p>
+        </a>
+
+        <a href="#dichuyen" class="category-item">
+            <span>🏍️</span>
+            <h3>Di chuyển</h3>
+            <p>Thuê xe và dịch vụ đưa đón</p>
+        </a>
+
+        <a href="#nghingoi" class="category-item">
+            <span>🏡</span>
+            <h3>Nghỉ ngơi</h3>
+            <p>Homestay và nhà nghỉ</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ĂN UỐNG -->
+<section class="service container" id="anuong">
+
+    <h2>DỊCH VỤ ĂN UỐNG</h2>
+
+    <p class="description">
+        Thưởng thức đặc sản và những món ăn mang đậm hương vị Trà Vinh.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="../assets/3.jpg"
+                 alt="Bún nước lèo">
+
+            <div class="card-content">
+                <h3>Bún nước lèo Trà Vinh</h3>
+
+                <p>
+                    Món ăn đặc sản với nước lèo thơm ngon,
+                    ăn kèm rau sống và các loại topping.
+                </p>
+
+                <p><b>Địa điểm:</b> Trà Vinh</p>
+                <p class="price">Giá tham khảo: 30.000 - 50.000đ</p>
+
+                <button onclick="xemChiTiet('Bún nước lèo Trà Vinh')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../assets/banhtet.jpg"
+                 alt="Bánh tét">
+
+            <div class="card-content">
+                <h3>Bánh tét Trà Cuôn</h3>
+
+                <p>
+                    Đặc sản truyền thống nổi tiếng
+                    với hương vị thơm ngon và nhân bánh phong phú.
+                </p>
+
+                <p><b>Địa điểm:</b> Trà Cuôn, Trà Vinh</p>
+                <p class="price">Giá: Liên hệ hộ dân</p>
+
+                <button onclick="xemChiTiet('Bánh tét Trà Cuôn')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+           <img src="../assets/duasap.jpg"
+                 alt="Bánh canh dừa sáp">
+
+            <div class="card-content">
+                <h3>Bánh Canh Dừa Sáp</h3>
+
+                <p>
+                    Đặc sản món ăn độc đáo và mới lạ 
+				    được sáng tạo bởi đội ngũ tại Bảo tàng Dừa Sáp Trà Vinh 
+                </p>
+
+                <p><b>Địa điểm:</b> Cầu Kè, Trà Vinh</p>
+                <p class="price">Giá: 130.000 – 140.000 đồng/kg </p>
+
+                <button onclick="xemChiTiet('Dừa sáp Cầu Kè')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- DI CHUYỂN -->
+<section class="service container" id="dichuyen">
+
+    <h2>DỊCH VỤ DI CHUYỂN</h2>
+
+    <p class="description">
+        Hỗ trợ du khách di chuyển và khám phá các địa điểm du lịch.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="../assets/12.jpg"
+                 alt="Dịch vụ đi chuyển bằng xe máy">
+
+            <div class="card-content">
+                <h3>Đưa đón xe máy</h3>
+
+                <p>
+                   Dịch vụ đưa đón giúp du khách
+                   tham quan đi lại thuận tiện
+                </p>
+
+                <p><b>Địa điểm:</b> Khu vực Trà Vinh</p>
+                <p class="price">Giá:tùy vào quảng đường và dịch vụ bạn sử dụng</p>
+
+                <button onclick="xemChiTiet('Thuê xe máy')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+           <img src="../assets/13.jpg"
+                 alt="Xe ô tô">
+
+            <div class="card-content">
+                <h3>Dịch vụ đi chuyển bằng ô tô</h3>
+
+                <p>
+                    Dịch vụ đưa đón giúp du khách
+                   tham quan đi lại thuận tiện
+                </p>
+
+                <p><b>Địa điểm:</b> Trà Vinh</p>
+                <p class="price">Giá: Liên hệ hộ dân</p>
+
+                <button onclick="tùy vào quảng đường và dịch vụ bạn sử dụng">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+             <img src="../assets/11.jpg"
+                 alt="Xe đạp">
+
+            <div class="card-content">
+                <h3>Thuê xe đạp tham quan</h3>
+
+                <p>
+                    Trải nghiệm đạp xe, khám phá cảnh quan
+                    và đời sống người dân địa phương.
+                </p>
+
+                <p><b>Địa điểm:</b> Cồn Chim</p>
+                <p class="price">Giá: Liên hệ điểm du lịch</p>
+
+                <button onclick="xemChiTiet('Thuê xe đạp tham quan')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NGHỈ NGƠI -->
+<section class="service container" id="nghingoi">
+
+    <h2>DỊCH VỤ NGHỈ NGƠI</h2>
+
+    <p class="description">
+        Giới thiệu những nơi lưu trú và nghỉ dưỡng tại địa phương.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+             <img src="../assets/14.jpg"
+                 alt="Homestay">
+
+            <div class="card-content">
+                <h3>Homestay cộng đồng</h3>
+
+                <p>
+                    Trải nghiệm cuộc sống cùng người dân,
+                    tìm hiểu văn hóa và phong tục địa phương.
+                </p>
+
+                <p><b>Địa điểm:</b> Cồn Chim</p>
+                <p class="price">Giá: Liên hệ hộ dân</p>
+
+                <button onclick="xemChiTiet('Homestay cộng đồng')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+               <img src="../assets/15.jpg"
+                 alt="Khách sạn">
+
+            <div class="card-content">
+                <h3>Khách sạn</h3>
+
+                <p>
+                    Phòng nghỉ tiện nghi, phù hợp với
+                    gia đình và nhóm khách du lịch.
+                </p>
+
+                <p><b>Địa điểm:</b> Khu vực Trà Vinh</p>
+                <p class="price">Giá: Theo loại phòng</p>
+
+                <button onclick="xemChiTiet('Khách sạn')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+               <img src="../assets/16.jpg"
+                 alt="Nhà nghỉ">
+
+            <div class="card-content">
+                <h3>Nhà nghỉ bình dân</h3>
+
+                <p>
+                    Cung cấp chỗ nghỉ phù hợp với du khách
+                    muốn tiết kiệm chi phí.
+                </p>
+
+                <p><b>Địa điểm:</b> Khu vực Trà Vinh</p>
+                <p class="price">Giá: Liên hệ cơ sở</p>
+
+                <button onclick="xemChiTiet('Nhà nghỉ bình dân')">
+                    Xem chi tiết
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHI TIẾT DỊCH VỤ -->
+<section class="detail-section" id="chitiet" style="display:none">
+    <div class="container detail-box">
+        <h2 id="tenChiTiet"></h2>
+        <p>
+            Đây là dịch vụ được giới thiệu trên hệ thống
+            du lịch cộng đồng Trà Vinh.
+        </p>
+        <p>
+            Du khách có thể liên hệ hộ dân cung cấp dịch vụ
+            để biết thêm thông tin, giá cả và thời gian phục vụ.
+        </p>
+        <button onclick="dongChiTiet()">Đóng</button>
+    </div>
+</section>
+
+<!-- QUẢN LÝ DỊCH VỤ -->
+<section class="management container" id="quanly">
+
+    <h2>QUẢN LÝ DỊCH VỤ HỘ DÂN</h2>
+
+    <p class="description">
+        Khu vực hỗ trợ hộ dân đăng tải và quản lý thông tin dịch vụ.
+    </p>
+
+    <div class="form-box">
+
+        <h3>Thêm dịch vụ mới</h3>
+
+        <input type="text" id="tenDichVu"
+               placeholder="Tên dịch vụ">
+
+        <select id="loaiDichVu">
+            <option value="">Chọn loại dịch vụ</option>
+            <option value="Ăn uống">Ăn uống</option>
+            <option value="Di chuyển">Di chuyển</option>
+            <option value="Nghỉ ngơi">Nghỉ ngơi</option>
+        </select>
+
+        <input type="text" id="diaChi"
+               placeholder="Địa chỉ dịch vụ">
+
+        <input type="text" id="gia"
+               placeholder="Giá dịch vụ">
+
+        <input type="text" id="chuHo"
+               placeholder="Tên hộ dân cung cấp">
+
+        <button onclick="themDichVu()">Thêm dịch vụ</button>
+
+    </div>
+
+    <h3 class="table-title">Danh sách dịch vụ đã đăng</h3>
+
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên dịch vụ</th>
+                    <th>Loại dịch vụ</th>
+                    <th>Địa chỉ</th>
+                    <th>Giá</th>
+                    <th>Hộ dân</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+
+            <tbody id="danhSachDichVu">
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<!-- LIÊN HỆ -->
+<section class="contact" id="lienhe">
+    <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+
+    <p>Website hỗ trợ quảng bá dịch vụ du lịch cộng đồng Trà Vinh.</p>
+
+    <p>Email: dulichcongdong@gmail.com</p>
+    <p>Địa điểm: Trà Vinh, Việt Nam</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 - Website du lịch cộng đồng Trà Vinh</p>
+    <p>Kết nối hộ dân - Quảng bá địa phương - Phát triển du lịch</p>
+</footer>
+
+<script src="js/dichvu.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 const diaDiems = [
     {
         ten: "Ao Bà Om",
@@ -55,21 +56,46 @@ const diaDiems = [
     }
 ];
 
-function hienThiDiaDiem() {
-    const danhSach = document.getElementById("danhSachDiaDiem");
+// Chuẩn hóa chữ để tìm kiếm không dấu
+function chuanHoa(chuoi) {
+    return chuoi.toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/đ/g, "d")
+        .trim();
+}
 
-    danhSach.innerHTML = "";
+// Hiển thị danh sách địa điểm
+function hienThiDiaDiem(danhSach = diaDiems) {
+    const danhSachHTML = document.getElementById("danhSachDiaDiem");
 
-    diaDiems.forEach((item, index) => {
-        danhSach.innerHTML += `
+    if (!danhSachHTML) return;
+
+    danhSachHTML.innerHTML = "";
+
+    if (danhSach.length === 0) {
+        danhSachHTML.innerHTML = `
+            <div class="khong-co-ket-qua">
+                <h3>Không tìm thấy địa điểm!</h3>
+                <p>Vui lòng thử lại với từ khóa khác.</p>
+            </div>
+        `;
+        return;
+    }
+
+    danhSach.forEach((item, index) => {
+        danhSachHTML.innerHTML += `
             <div class="place-card">
                 <div class="place-info">
                     <h3>${item.ten}</h3>
+
                     <p>📍 ${item.diaChi}</p>
+
                     <p>${item.moTa}</p>
 
                     <a href="${item.googleMaps}"
                        target="_blank"
+                       rel="noopener noreferrer"
                        class="map-btn">
                         📍 Xem Google Maps
                     </a>
@@ -79,5 +105,34 @@ function hienThiDiaDiem() {
     });
 }
 
+// Tìm kiếm địa điểm
+function timKiemDiaDiem() {
+    const oTimKiem = document.getElementById("timKiemDiaDiem");
+
+    if (!oTimKiem) return;
+
+    const tuKhoa = chuanHoa(oTimKiem.value);
+
+    const ketQua = diaDiems.filter(item => {
+        const thongTin = chuanHoa(
+            item.ten + " " +
+            item.diaChi + " " +
+            item.moTa
+        );
+
+        return thongTin.includes(tuKhoa);
+    });
+
+    hienThiDiaDiem(ketQua);
+}
+
 // Tự động hiển thị khi mở trang
-document.addEventListener("DOMContentLoaded", hienThiDiaDiem);
+document.addEventListener("DOMContentLoaded", function () {
+    hienThiDiaDiem();
+
+    const oTimKiem = document.getElementById("timKiemDiaDiem");
+
+    if (oTimKiem) {
+        oTimKiem.addEventListener("input", timKiemDiaDiem);
+    }
+});

@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ body {
 /* HEADER */
 
 .header {
-    background: #ffffff;
+    background: #326b49;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -43,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #168a55;
+    color: #ffffff;
 }
 
 .logo span {
@@ -52,6 +53,7 @@ body {
 
 .logo h2 {
     font-size: 21px;
+    color: #ffffff;
 }
 
 .navbar {
@@ -61,12 +63,12 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 600;
 }
 
 .navbar a:hover {
-    color: #168a55;
+    color: #d1f5dc;
 }
 
 .menu-btn {
@@ -75,6 +77,7 @@ body {
     background: none;
     font-size: 26px;
     cursor: pointer;
+    color: #ffffff;
 }
 
 
@@ -393,7 +396,7 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background: white;
+        background: #326b49;
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
